@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:js='false' b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='2.5' expr:dir='data:blog.languageDirection' lang='id' xml:lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<b:skin><![CDATA[
+
+]]></b:skin>
+</head>
+
+<body itemscope='itemscope' itemtype='https://schema.org/WebPage'>
+  <b:if cond='data:view.isHomepage'>
+    <!--Stream Files-->
+    <style>/*<![CDATA[*/
+      body{margin:0;padding:0}*,:after,:before{box-sizing:border-box}html{overflow-y:scroll}body{font-family:'Titillium Web',sans-serif}a{text-decoration:none;color:#1ab188;transition:.5s ease}a:hover{color:#179b77}#createIframe,.hidden{display:none}#arsipin,#fluid_video_wrapper_video,body>.plyr{position:absolute;width:100%!important;height:100%!important}.jw-button-color:hover,.jw-open,.jw-progress,.jw-toggle,.jw-toggle:hover{color:#008fee!important}.jw-active-option{background-color:#008fee!important}.jw-progress{background:#008fee!important}.jw-skin-seven .jw-toggle.jw-off{color:#fff!important}.form{background:rgba(19,35,47,.9);padding:40px;max-width:600px;margin:40px auto;border-radius:4px;box-shadow:0 4px 10px 4px rgba(19,35,47,.3)}.tab-group{list-style:none;padding:0;margin:0 0 40px 0}.tab-group:after{content:"";display:table;clear:both}.tab-group li a{display:block;text-decoration:none;padding:15px;background:rgba(160,179,176,.25);color:#a0b3b0;font-size:20px;float:left;width:50%;text-align:center;cursor:pointer;transition:.5s ease}.tab-group li a:hover{background:#179b77;color:#fff}.tab-group .active a{background:#1ab188;color:#fff}.tab-content>div:last-child{display:none}h1{text-align:center;color:#fff;font-weight:300;margin:0 0 40px}label{color:rgba(255,255,255,.5);transition:all .25s ease;font-size:14px;margin-left:5px}label .req{margin:2px;color:#1ab188}input,select,textarea{font-size:22px;display:block;width:100%;height:100%;padding:5px 10px;background:0 0;background-image:none;border:1px solid #a0b3b0;color:#fff;border-radius:0;transition:border-color .25s ease,box-shadow .25s ease;margin-top:5px}select option{background-color:rgba(19,35,47,.9)}input:focus,select:focus,textarea:focus{outline:0;border-color:#1ab188}textarea{border:2px solid #a0b3b0;resize:vertical}.field-wrap{position:relative;margin-bottom:40px}.top-row:after{content:"";display:table;clear:both}.top-row>div{float:left;width:48%;margin-right:4%}.top-row>div:last-child{margin:0}.button,.useLocal{border:0;outline:0;border-radius:0;padding:15px 0;font-size:2rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;background:#1ab188;color:#fff;transition:all .5s ease;cursor:pointer}.button:focus,.button:hover,.useLocal:hover{background:#179b77}.useLocal{font-size:inherit;padding:5px;display:block;text-align:center;margin:0;margin-top:0;margin-top:5px}.button-block{display:block;width:100%}.forgot{margin-top:-20px;text-align:right}.box_item_ads_popup{position:fixed;z-index:999;left:0;margin:0 auto;text-align:center;right:0}.box_item_ads_popup img{max-width:350px;max-height:350px}.box_item_ads_popup .close-button{width:30%;margin:auto;padding:6px 10px;background:red;font-size:11px;color:#fff}.box_item_ads_popup{display:flex;justify-content:center;align-items:center;background:0 0;height:100%;width:460px;height:100%;opacity:0;transition:opacity .3s ease-in}.logo-custom{position:absolute;z-index:999;max-width:130px;right:0;padding:10px;color:red}.logo-custom img{width:100%;height:auto}.logo-custom svg{width:auto;max-height:30px}@media only screen and (max-width:980px){.box_item_ads_popup img{max-width:300px;max-height:250px}.box_item_ads_popup{width:450px}}@media only screen and (max-width:480px){.box_item_ads_popup img{max-width:280px;max-height:170px}.box_item_ads_popup{width:335px}}@media only screen and (max-width:425px){.box_item_ads_popup img{max-width:250px;max-height:140px}.box_item_ads_popup{width:335px}}@media only screen and (max-width:320px){.box_item_ads_popup img{max-width:210px;max-height:120px}.box_item_ads_popup{width:335px}}
+    /*]]>*/</style>
+    <div id='createIframe'>
+      <div class='form'>
+        <ul class='tab-group'>
+          <li class='tab active'><a href='#signup'>Create</a></li>
+          <li class='tab'><a href='#login'>Code</a></li>
+        </ul>
+        <div class='tab-content'>
+          <div id='signup'>
+            <h1>Create Player</h1>
+            <form>
+              <div class='top-row'>
+                <div class='field-wrap'>
+                  <label>Player<span class='req'>*</span></label>
+                  <select name='player' required='required'>
+                    <option value=''>Select Player</option>
+                    <option value='fluidplayer'>Fluid Player</option>
+                    <option value='jwpl'>JWPlayer</option>
+                    <option value='plyr'>Plyr.io</option>
+                    <option value='video'>Video</option>
+                  </select>
+                </div>
+                <div class='field-wrap'>
+                  <label>Provider<span class='req'>*</span></label>
+                  <select disabled='disabled' name='provider' required='required'>
+                    <option value=''>Select Provider</option>
+                    <option value='gdrive'>Google Drive</option>
+                    <option value='rand'>Random</option>
+                    <option value='yt'>Youtube</option>
+                  </select>
+                </div>
+              </div>
+              <div class='field-wrap'>
+                <label>Format Video<span class='req'>*</span></label>
+                <input name='format' placeholder='disabled' type='text' disabled='disabled' autocomplete='off' />
+              </div>
+              <div class='field-wrap'>
+                <label>Link Video<span class='req'>*</span>
+                </label>
+                <input class='hidden' id='file' name='file' type='file' accept='video/*' />
+                <input name='link' type='text' placeholder='Link Video' disabled='disabled' required='required' autocomplete='off' />
+                <label style='display: none;' class='useLocal' for='file'>Use Local Video</label>
+              </div>
+              <button type='submit' class='button button-block'>Confirm</button>
+            </form>
+          </div>
+          <div id='login'>
+            <h1>Your Code here</h1>
+            <div class='field-wrap'>
+              <label>Iframe Code<span class='req'>*</span></label>
+              <textarea id='ifcode' type='text'></textarea>
+            </div>
+            <div class='field-wrap'>
+              <label>Link<span class='req'>*</span></label>
+              <textarea id='links' type='text'></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>/*<![CDATA[*/
+      const config = {
+        gDriveApikey: "gdrive_api_key",
+        poster: "/",
+        ads: {
+          title: "Iklan Title",
+          image: "/",
+          url: "/"
+        },
+        logo: '𝚆𝚘𝚠. 𝙲𝚘𝚖'
+      };
+      (function (e) {
+        eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('4 t(e){18"<19 1O=\'1P; 1Q; 1R-j; 1S-1a; 1T; 1b-R-1b\' 1U=\'1V\' 1W=\'0\' 1X=\'1Y\' 1Z=\'20\' f=\'"+e+"\' 21=\'22\'></19>"}4 i(t){e.j(\'<b x="1c" 23="24:1"><b><a k="\'+t.25+\'" E="26" S="1d"> <27 f="\'+t.1e+\'" S="1d" 1f="\'+t.F+\'" F="\'+t.F+\'"></a><b x="1g-28" 29="(4(){2a.2b(\\\'.1c\\\').1h()})();18 2c;">\'+(t.1g||"2d 2e")+"</b></b></b>")}4 r(t){e.j(\'<b x="T-2f">\'+t+"</b>")}4 a(t){m i=e.1i("G");i.1j("S","2g"),i.1j("k",t),e.2h.1k(i)}4 o(t){m i=e.1i("2i");i.f=t.f,"y"R t&&(i.2j=t.y),"U"R t&&(i.2k=t.U),e.1l.1k(i)}m l=e.2l.k,n=1m 1n(l),s=n.B.H("V"),d=n.B.H("I"),c=n.B.H("W"),p=n.B.H("G");s?(()=>{e.2m("1o").1h();m t="X"==d?"z://2n.2o.J/2p/1p/1q/"+p+"?1f=1a&2q="+5.2r:p;2s{"K"==s?(e.j(\'<8 x="Y" A="8"><Z f="\'+t+\'" C="\'+c+\'"/></8>\'),o({f:"z://10.K.J/1p/2t/K.1r.L",y:4(){5.2u=2v("8",{2w:{2x:{2y:3,2z:!0,2A:!0},2B:!0,2C:!0,2D:!0,2E:!1,2F:!0,2G:5.q}})}})):"M"==s?(e.j(\'<b A="11"></b>\'),o({f:"z://1s.2H.J/2I/2J.L",y:4(){5.M=2K("11"),5.M.2L({F:"",2M:[{12:"",2N:"1t",2O:!0}],2P:[{12:t,C:c}],1e:5.q,1t:{2Q:"#2R",2S:17,2T:2U}})}})):"8"==s?e.j(\'<8 A="11" 1u q="\'+5.q+\'"><Z f="\'+t+\'" C="\'+c+\'"/></8>\'):"u"==s&&(a("z://10.u.1v/3.7.2/u.2V"),"N"==d?e.j(\'<b x="Y" A="8" O-q="\'+5.q+\'" O-u-I="2W" O-u-2X-A="\'+t+\'"></b>\'):e.j(\'<8 x="Y" A="8" 2Y 1u O-q="\'+5.q+\'"><Z f="\'+t+\'" C="\'+c+\'"/></8>\'),o({f:"z://10.u.1v/3.7.2/u.L",y:4(){5.u=1m 2Z("#8")}})),5.1w&&i(5.1w),5.T&&r(5.T)}30(t){e.1l.31=5.U||"<p>32</p>"}})():o({f:"z://33.34.J/35/36/1x/3.6.1/1x.1r.L",y:4(){$("#1o").1y("37"),$(".13").1z("1A, 38").1B("14",4(){m e=$(w),t=e.9("v"),i=e.g();"V"==t&&(()=>{m e=$("1A[v=I]"),t=e.1z("[1C=N]");["K","8","M"].1D(e=>e==i)?t.9("h",!0):t.9("h",!1),i.P>0?e.9({h:!1,Q:!0}):e.9({h:!0,Q:!1}),e.g(""),e.15("14")})(),"I"==t&&(()=>{m e=$("[v=W]"),t=$("[v=G]"),r=$(".39");t.g(""),t.9("D","3a 3b"),i.P>0?t.9("h",!1):t.9("h",!0),("1E"!=i||i.P<1)&&r.1F(),["X","1E"].1D(e=>e==i)?(e.9({h:!1,Q:!0,D:"8/1G"}),e.g("8/1G"),"X"==i?t.9("D","1H 3c"):r.1y()):("N"==i||i.P<1)&&(e.9({h:!0,Q:!1,D:"h"}),e.g(""),"N"==i&&t.9("D","1H 3d"))})(),"12"==t&&(()=>{m t=e.3e("1q")[0],i=1n.3f(t),r=t.C;3g.3h(t),$(\'[v="W"]\').g(r),$(\'[v="G"]\').g(i)})()}),$("#16 13").3i(4(e){e.1I();3j i=$(w).3k();n.3l="",$.1J(i,4(e,t){n.B.3m(t.v,t.1C)}),$("#3n").g(t(n.k)),$("#3o").g(n.k),$(\'a[k="#3p"]\').1K()}),$(".1L a").1B("1K",4(e){e.1I(),"#16"==$(w).9("k")&&($("#16 13").15("3q"),$("3r").1J(4(){$(w).g("")}),$("[v=V]").g("").15("14")),$(w).1M().3s("1N"),$(w).1M().3t().3u("1N"),E=$(w).9("k"),$(".1L-1s > b").3v(E).1F(),$(E).3w(3x)})}})',62,220,'||||function|config|||video|attr||div||||src|val|disabled||write|href||let||||poster||||plyr|name|this|class|load|https|id|searchParams|type|placeholder|target|title|link|get|provider|com|fluidplayer|js|jwpl|yt|data|length|required|in|rel|logo|err|player|format|gdrive|hidden|source|cdn|arsipin|file|form|change|trigger|signup||return|iframe|media|picture|box_item_ads_popup|nofollow|image|alt|close|remove|createElement|setAttribute|appendChild|body|new|URL|createIframe|v3|files|min|content|captions|controls|io|ads|jquery|show|find|select|on|value|some|rand|hide|mp4|ID|preventDefault|each|click|tab|parent|active|allow|accelerometer|autoplay|clipboard|encrypted|gyroscope|allowfullscreen|true|frameborder|height|315|scrolling|no|width|560|style|opacity|url|_blank|img|button|onClick|document|querySelector|false|Tutup|Iklan|custom|stylesheet|head|script|onload|onerror|location|getElementById|www|googleapis|drive|key|gDriveApikey|try|current|fply|fluidPlayer|layoutControls|controlBar|autoHideTimeout|animated|autoHide|allowDownload|allowTheatre|fillToContainer|playbackRateEnabled|playPauseAnimation|posterImage|jwplatform|libraries|zgIRUsiD|jwplayer|setup|tracks|kind|default|sources|color|FFFF00|fontSize|backgroundOpacity|50|css|youtube|embed|playsinline|Plyr|catch|innerHTML|Error|cdnjs|cloudflare|ajax|libs|slow|input|useLocal|Link|Video|GDRIVE|Youtube|prop|createObjectURL|console|log|submit|const|serializeArray|search|append|ifcode|links|login|reset|textarea|addClass|siblings|removeClass|not|fadeIn|600'.split('|'),0,{}));
+      })(document);
+    /*]]>*/</script>
+    <!--End Stream Files-->
+    <b:else/>
+    <b:section id='post-body'>
+      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+          <b:widget-setting name='commentLabel'>Komentar</b:widget-setting>
+          <b:widget-setting name='style.textcolor'>#161617</b:widget-setting>
+          <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+          <b:widget-setting name='authorLabel'>Oleh</b:widget-setting>
+          <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+          <b:widget-setting name='style.urlcolor'>#4d4d4d</b:widget-setting>
+          <b:widget-setting name='showAuthor'>true</b:widget-setting>
+          <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+          <b:widget-setting name='style.linkcolor'>#505050</b:widget-setting>
+          <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+          <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='timestampLabel'>Pada</b:widget-setting>
+          <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+          <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+          <b:widget-setting name='showLabels'>true</b:widget-setting>
+          <b:widget-setting name='showLocation'>false</b:widget-setting>
+          <b:widget-setting name='postLabelsLabel' />
+          <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+          <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+          <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+          <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+          <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+          <b:widget-setting name='showReactions'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main' var='this'>
+          <h2>Hello World</h2>
+        </b:includable>
+        <b:includable id='imageList' var='post' />
+        <b:includable id='shareButton' var='post' />
+        <b:includable id='aboutPostAuthor' />
+        <b:includable id='blogThisShare' />
+        <b:includable id='bylineByName' />
+        <b:includable id='dataMessages' />
+        <b:includable id='addComments' />
+        <b:includable id='commentFormulir' />
+        <b:includable id='commentAuthorAvatar' var='v' />
+        <b:includable id='commentDeleteIcon' var='comment' />
+        <b:includable id='commentForm' var='post' />
+        <b:includable id='commentFormIframeSrc' var='post' />
+        <b:includable id='commentItem' var='obj' />
+        <b:includable id='commentList' var='post' />
+        <b:includable id='commentPicker' var='post' />
+        <b:includable id='commentReply' var='obj' />
+        <b:includable id='comments' var='post' />
+        <b:includable id='commentsLink' />
+        <b:includable id='commentsTitle' var='post' />
+        <b:includable id='emailPostIcon' />
+        <b:includable id='facebookShare' />
+        <b:includable id='feedPosts' var='i' />
+        <b:includable id='feedLinks' />
+        <b:includable id='feedLinksBody' var='links' />
+        <b:includable id='footerBylines' />
+        <b:includable id='googlePlusShare' />
+        <b:includable id='inlineAd' var='post' />
+        <b:includable id='nextPageLink' />
+        <b:includable id='postMetadataJSONPublisher' />
+        <b:includable id='postMetadataJSONImage' />
+        <b:includable id='postLocation' />
+        <b:includable id='postReactions' />
+        <b:includable id='postTimestamp' />
+        <b:includable id='sharingButton' />
+        <b:includable id='sharingButtons' />
+        <b:includable id='sharingButtonsMenu' />
+        <b:includable id='sharingPlatformIcon' />
+        <b:includable id='nextPrevPost' />
+        <b:includable id='post' var='post' />
+        <b:includable id='postBody' var='post' />
+        <b:includable id='sharingButtonContent' />
+        <b:includable id='postAuthor' />
+        <b:includable id='postJumpLink' />
+        <b:includable id='postBodySnippet' var='i' />
+        <b:includable id='postCommentsAndAd' var='post' />
+        <b:includable id='postCommentsLink' />
+        <b:includable id='postFooter' var='i' />
+        <b:includable id='postFooterAuthorProfile' var='post' />
+        <b:includable id='postHeader' var='post' />
+        <b:includable id='postLabels' var='i' />
+        <b:includable id='postMeta' var='post' />
+        <b:includable id='platformShare' />
+        <b:includable id='iframeComments' />
+        <b:includable id='homePageLink' />
+        <b:includable id='headerByline' />
+        <b:includable id='defaultAdUnit' />
+        <b:includable id='commentsLinkIframe' />
+        <b:includable id='bylineRegion' />
+        <b:includable id='otherSharingButton' />
+        <b:includable id='linkShare' />
+        <b:includable id='postPagination' />
+        <b:includable id='postShareButtons' />
+        <b:includable id='postTitle' var='post' />
+        <b:includable id='previousPageLink' />
+        <b:includable id='threadedCommentForm' var='post' />
+        <b:includable id='threadedCommentJs' var='post' />
+        <b:includable id='threadedComments' var='post' />
+      </b:widget>
+    </b:section>
+  </b:if>
+</body>
+
+</html>
